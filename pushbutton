@@ -1,0 +1,24 @@
+int pushButton = 8;
+int led = 4;
+
+void setup()
+{
+  pinMode(pushButton, INPUT);
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int pB = digitalRead(pushButton);
+  Serial.print("Push Button: ");
+  Serial.println(pB);
+  if (pB == 1)
+  {
+    digitalWrite(led, HIGH);
+  }
+  else
+  {
+    digitalWrite(led, LOW);
+  }
+}
