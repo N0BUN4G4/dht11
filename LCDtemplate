@@ -15,7 +15,7 @@ void setup ()
   lcd.____(_,_);
   lcd.__("___");
   lcd.___(_,_);
-  lcd.__("cloud");
+  lcd.__("___");
 }
 
 void loop()
