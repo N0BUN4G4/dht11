@@ -1,0 +1,51 @@
+#include <Servo.h>
+#define trigPin 7
+#define echoPin 6
+#define servoPin 5
+
+float __, __;
+
+Servo Servo1;
+
+void setup()
+{
+  Serial.begin (9600);
+  pinMode(__, __);
+  __(__, __);
+  __.attach(__);
+}
+
+void loop()
+{
+  //Clears the 'trigPin' condition
+  digitalWrite(__, __);
+  delayMicroseconds(2);
+
+  //Sets the 'trigPin' HIGH (ACTIVE) for 10 microseconds
+  digitalWrite(__, __);
+  delayMicroseconds(10);
+  digitalWrite(__, __);
+
+  //Reads the 'echoPin', returns the sound wave travel time in microseconds
+  duration = pulseIn(__, HIGH);
+
+  //Calculating the 'distance'
+  // Use 343 metres per second as speed of sound
+  __ = (__ * .0343) / 2;
+
+  //Display the 'distance' in cm on the serial monitor
+  Serial.print(__);
+  Serial.println(" cm");
+  delay(500);
+
+  //Turn on LED if obstacle is detected and vice versa
+  if (distance < 10)
+  {
+    Servo1.write(90);
+  }
+
+  else
+  {
+    Servo1.write(0);
+  }
+}
