@@ -1,0 +1,32 @@
+#include<Servo.h>
+Servo __;
+__ __;
+int pos= __;
+int buttonPin = 8;
+int buttonstate = __;
+
+void setup()
+{
+  pinMode(__,__);
+  ___.attach(_);
+  ___.attach(_);
+}
+
+void loop ()
+{
+  buttonstate = __(__);
+
+  if (buttonstate == HIGH)
+  {
+  __.write(__);
+  delay(__);
+  __.write(__);
+  delay(__);
+  __.write(__);
+  delay(__);
+  __.write(__);
+   }
+  else
+  __.write(__);
+  __.write(__);
+}
