@@ -1,0 +1,36 @@
+//ultrasonic pin
+int echoPin = __;
+int trigPin = __;
+long duration;
+int distance;
+
+void setup()
+{
+  pinMode(__, __); //echo
+  pinMode(__, __); //trig
+  Serial.begin(9600);
+}
+
+void ultrasonic() //ultrasonic
+{
+  delay(1000); // 1-second delay
+  digitalWrite( __, LOW); //ultrasonic trig pin
+  delayMicroseconds(2);
+
+  //ultrasonic trig pin
+  digitalWrite( __, HIGH);
+  delayMicroseconds(10);
+  digitalWrite( __, LOW);
+
+  //ultrasonic echo pin
+  duration = pulseIn(__, HIGH);
+  __ = __ * 0.034 / 2;
+}
+
+void loop()
+{
+  ultrasonic(); //ultrasonic
+  Serial.print("Distance between Ultrasonic and Obstacle: ");
+  Serial.println(___);
+  
+}
