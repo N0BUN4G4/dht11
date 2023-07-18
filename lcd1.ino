@@ -13,9 +13,9 @@ void setup ()
   //Print a message to the LCD.
   lcd.backlight();
   lcd.setCursor(0,0);
-  lcd.print("Monir");
+  lcd.print("Hello");
   lcd.setCursor(0,1);
-  lcd.print("cloud");
+  lcd.print("IPG");
 }
 
 void loop()
