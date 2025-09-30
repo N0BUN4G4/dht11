@@ -1,0 +1,26 @@
+const int __= __;
+const int __= __;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(__, __);
+  pinMode(__, __);
+}
+
+void loop()
+{
+  int __ = __(__);
+  if (__ <= 200)
+  {
+    digitalWrite(__, HIGH);
+    Serial.print("Its DARK, Turn on the LED : ");
+    Serial.println(__);
+  }
+  else
+  {
+    digitalWrite(__, LOW);
+    Serial.print("Its BRIGHT, Turn off the LED : ");
+    Serial.println(__);
+  }
+}
