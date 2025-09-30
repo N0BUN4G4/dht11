@@ -8,17 +8,16 @@ LiquidCrystal_I2C lcd(0x27,20,4); //set the LCD address to 0x27 for a 16 chars a
 
 void setup ()
 {
-  lcd.init();
-  __.__();
-  //Print a message to the LCD.
-  lcd.___();
-  lcd.____(_,_);
-  lcd.__("___");
-  lcd.___(_,_);
-  lcd.__("___");
+  lcd.init();    // Start the LCD so it’s ready to use
+  lcd.___();     // Turn on the backlight so we can see the text on the screen
+  lcd.___(_,_);  // Tell the LCD to move the text cursor to the first row, first column (top-left corner)
+  lcd.__("___"); //Print a message to the LCD.
+  lcd.___(_,_);  // Move the cursor to the second row, first column
+  lcd.__("___"); //Print a message to the LCD.
 }
 
+// The loop() function repeats over and over forever
 void loop()
 {
-  
+  // We don’t want the Arduino to keep doing anything here, so it stays empty
 }
